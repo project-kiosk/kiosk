@@ -1,5 +1,7 @@
 # kiosk
-Kiosk is a simple web application to manage, read and download your ebooks.
+Kiosk is a simple web application to manage, read and download your ebooks.  
+
+![Single book](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/single-book-with-description.png)
 
 ## Requirements
 Kiosk uses [Redis](https://redis.io/) to store the ebook meta data. The ebooks itself are stored on the filesystem.
