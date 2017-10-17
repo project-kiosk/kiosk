@@ -21,7 +21,7 @@ Start the application:
 Visit the following URL in your browser: [localhost:3000](http://localhost:3000). Welcome to Kiosk.
 
 ## Screenshots, features, etc
-See here.
+See [here](https://radiergummi.github.io/kiosk/).
 
 ## Current state of development
 I made Kiosk a while ago to solve a specific problem: Having to manage an ebook library for my family. The goal was to have an easy interface anyone here could upload, view and edit his ebooks and later download them on their reader.  
