@@ -3,7 +3,36 @@ Kiosk is a simple web application to manage, read and download your ebooks.
 
 
 ## Screenshots, features, etc
-See [here](https://radiergummi.github.io/kiosk/).
+
+### Books overview
+![Books overview](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/books-overview.png)
+![Books overview 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/books-overview-2.png)
+![Books overview 3](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/books-overview-narrow.png)
+
+### Single book
+![Single book](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/single-book-with-description.png)
+![Single book 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/single-book-2.png)
+![Single book 3](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/single-book-narrow.png)
+
+### Upload a new book
+![Upload book](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/upload-book.png)
+![Upload book 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/upload-book-swap-cover.png)
+![Upload book 3](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/upload-book-autodiscover-metadata.png)
+![Upload book 3](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/upload-book-extended-metadata.png)
+
+### Edit a book
+![Edit book](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/edit-book-calendar.png)
+![Edit book 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/edit-book-description.png)
+
+### Read a book
+![Book reader](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/book-reader-menu-bar.png)
+![Book reader 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/book-reader-light-mode.png)
+![Book reader 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/book-reader-night-mode.png)
+
+### View books by author (or publisher, or date, or genre, or...)
+![Book sorting](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/books-by-author.png)
+![Book sorting 2](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/books-by-author-narrow.png)
+
 
 ## Current state of development
 I made Kiosk a while ago to solve a specific problem: Having to manage an ebook library for my family. The goal was to have an easy interface anyone here could upload, view and edit his ebooks and later download them on their reader.  
