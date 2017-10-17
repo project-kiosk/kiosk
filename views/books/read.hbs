@@ -1,0 +1,60 @@
+<html data-scheme="white">
+  <head>
+    <title>Kiosk</title>
+    <link href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <link href="/css/reader.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--<nav class="reader-navigation" role="navigation">
+      <button class="cancel minimal"><span class="im im-angle-left"></span>Zurück</button>
+    </nav>-->
+    <main role="main" class="reader read-book" data-filename="{{filename}}">
+      <div class="options ui">
+        <div class="option ui">
+          <button class="font-size">Schriftgröße</button>
+          <div class="font-size-dropdown dropdown ui">
+            <input class="font-size-selector" type="range" min="0.75" max="2.5" step="any" value="1">
+          </div>
+        </div>
+        <div class="option ui">
+          <button class="page-width">Seitenbreite</button>
+          <div class="page-width-dropdown dropdown ui">
+            <input class="page-width-selector" type="range" min="20" max="80" step="any" value="80">
+          </div>
+        </div>
+        <div class="option ui">
+          <button class="line-height">Zeilenabstand</button>
+          <div class="line-height-dropdown dropdown ui">
+            <input class="line-height-selector" type="range" min="1" max="3" step="any" value="1.5">
+          </div>
+        </div>
+        <div class="option ui">
+          <button class="font-style">Schriftart</button>
+        </div>
+        <div class="option ui">
+          <button class="color-scheme">Farbe</button>
+          <div class="color-scheme-dropdown dropdown ui">
+            <button class="white scheme" data-scheme="white" data-scheme-color="rgba(0,0,0,.87)">Weiß</button>
+            <button class="sepia scheme" data-scheme="sepia" data-scheme-color="rgba(0,0,0,.87)">Sepia</button>
+            <button class="night scheme" data-scheme="night" data-scheme-color="#ccc">Nacht</button>
+          </div>
+        </div>
+      </div>
+      <div id="area"></div>
+      <nav class="page-navigation ui">
+        <button class="previous"><span class="im im-angle-left"></span></button>
+        <button class="next"><span class="im im-angle-right"></span></button>
+      </nav>
+      <div class="current-position ui">
+        <button class="return"><span class="im im-angle-left"></span>Zurück</button>
+        <input class="current-position-slider" type="range" min="0" max="100" step="any" value="0">
+        <span class="current-position-number"><input id="current-percent" size="5" value="0">%</span>
+      </div>
+    </main>
+    <script src="/js/epubjs/epub.min.js"></script>
+    <script src="/js/epubjs/libs/zip.min.js"></script>
+    <script src="/js/epubjs/libs/localforage.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/books/read.js"></script>
+  </body>
+</html>

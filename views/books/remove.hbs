@@ -1,0 +1,12 @@
+<main role="main">
+  <header class="content-header">
+    <h1>{{title}} löschen</h1>
+  </header>
+  <form class="remove-book dialog" method="post" action="/books/{{_id}}/remove">
+    <h2>Soll das Buch {{title}} wirklich unwiderruflich gelöscht werden?</h2>
+    <footer class="button-group">
+      <button class="edit-book submit danger" type="submit">Buch löschen</button>
+      <button class="cancel" type="button">Abbrechen</button>
+    </footer>
+  </form>
+</main>

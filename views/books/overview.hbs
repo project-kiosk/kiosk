@@ -1,0 +1,28 @@
+<header class="content-header">
+  {{>sidebar}}
+  <div class="actions">
+    <button class="create-book"><span class="im im-plus"></span>Buch hinzufügen</button>
+  </div>
+</header>
+<main role="main" class="list books-list">
+  {{#if books}}
+    {{#each books}}
+      {{>book}}
+    {{/each}}
+    <article class="book add-book-pseudo">
+      <a href="/books/add" class="cover">
+        <img src="/img/default.jpg">
+      </a>
+      <section class="meta">
+        <h2 class="title"><a href="/books/add">Buch hinzufügen</a></h2>
+        <h3 class="author"></h3>
+      </section>
+    </article>
+    <article class="spacer"></article>
+    <article class="spacer"></article>
+    <article class="spacer"></article>
+  {{else}}
+    <span class="no-content">Noch keine Bücher vorhanden</span>
+  {{/if}}
+</main>
+<script src="/js/books/overview.js"></script>

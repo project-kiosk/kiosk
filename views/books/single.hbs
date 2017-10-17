@@ -1,0 +1,39 @@
+<main role="main" class="single single-book">
+  <article class="book" id="book-{{_id}}">
+    <nav class="left-navigation" style="background-image:url(/uploads/covers/{{_id}}_blur.jpg)">
+      <button class="previous cancel minimal"><span class="im im-angle-left"></span>Zurück</button>
+      <div class="actions">
+        <button class="download-book minimal" data-download="{{filename}}"><span class="im im-cloud-download"></span>Herunterladen
+        </button>
+      </div>
+    </nav>
+    <div class="cover">
+      <img src="/uploads/covers/{{_id}}.jpg" title="Cover von {{title}}">
+    </div>
+    <nav class="top-navigation">
+      <a href="/books">Ähnliche Bücher</a>
+      <a href="/books/author/{{author}}">Weitere Bücher von {{author}}</a>
+      <a href="/books/publisher/{{publisher}}">Weitere Bücher bei {{publisher}}</a>
+    </nav>
+    <section class="meta">
+      <h2 class="title">{{title}}</h2>
+      <h3 class="author">von <a href="/books/author/{{author}}" title="Bücher von {{author}}">{{author}}</a></h3>
+      <h4 class="more">
+        {{#if genre}}{{genre}} · {{/if}}
+        {{#if publisher}}erschienen bei {{publisher}}{{/if}}
+        {{#if _publishingDate}} ({{formatDate _publishingDate}}){{/if}}
+      </h4>
+      <section class="description">
+        {{{description}}}
+        {{#unless description}}Keine Beschreibung angegeben{{/unless}}
+      </section>
+      <div class="actions">
+        <button class="download-book" data-download="{{filename}}"><span class="im im-cloud-download"></span>Herunterladen</button>
+        <button class="read-book"><span class="im im-book"></span>Lesen</button>
+        <button class="edit-book"><span class="im im-edit"></span>Bearbeiten</button>
+        <button class="remove-book danger"><span class="im im-x-mark"></span>Löschen</button>
+      </div>
+    </section>
+  </article>
+</main>
+<script src="/js/books/single.js"></script>

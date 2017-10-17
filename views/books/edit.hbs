@@ -1,0 +1,52 @@
+<header class="content-header">
+  {{>sidebar}}
+  <div class="actions">
+    <button class="cancel"><span class="im im-angle-left"></span>Zurück</button>
+  </div>
+</header>
+<main role="main">
+  <form class="add-book" method="post" action="/books/{{_id}}/edit" enctype="multipart/form-data">
+    <label for="book-cover">
+      <span class="label-text">Neues Buchcover</span>
+      <div class="book-cover-placeholder loaded" style="background-image:url(/uploads/covers/{{_id}}.jpg)"></div>
+      <input id="book-cover" type="file" name="cover" accept="image/*">
+    </label>
+    <!--
+    <label for="book-file">
+      <span class="label-text">Datei</span>
+      <input id="book-file" type="file" name="file" accept="application/epub+zip" required>
+    </label>
+    -->
+    <label for="book-title">
+      <span class="label-text">Titel</span>
+      <input id="book-title" type="text" name="title" placeholder="Titel" value="{{title}}" required>
+    </label>
+    <label for="book-author">
+      <span class="label-text">Autor</span>
+      <input id="book-author" type="text" name="author" placeholder="Autor" value="{{author}}" required>
+    </label>
+    <label for="book-publisher">
+      <span class="label-text">Verlag</span>
+      <input id="book-publisher" type="text" name="publisher" placeholder="Verlag" value="{{publisher}}">
+    </label>
+    <label for="book-publishing-date">
+      <span class="label-text">Veröffentlichung</span>
+      <input id="book-publishing-date" type="date" name="publishingDate" placeholder="Datum"
+             value="{{inputDate _publishingDate}}" data-date="{{inputDate _publishingDate}}">
+    </label>
+    <label for="book-genre">
+      <span class="label-text">Genre</span>
+      <input id="book-genre" type="text" name="genre" placeholder="Genre" value="{{genre}}">
+    </label>
+    <label for="book-description">
+      <span class="label-text">Beschreibung</span>
+      <textarea class="editor" id="book-description" type="text" name="description"
+                placeholder="Beschreibung">{{description}}</textarea>
+    </label>
+    <footer class="button-group">
+      <button class="edit-book submit" type="submit"><span class="im im-check-mark"></span>Speichern</button>
+      <button class="cancel" type="button"><span class="im im-x-mark"></span>Abbrechen</button>
+    </footer>
+  </form>
+</main>
+<script src="/js/edit.js"></script>
