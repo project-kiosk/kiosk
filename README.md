@@ -4,7 +4,9 @@ Kiosk is a simple web application to manage, read and download your ebooks.
 ![Single book](https://github.com/Radiergummi/kiosk/raw/master/docs/screenshots/single-book-with-description.png)
 
 ## Requirements
-Kiosk **previously** used Redis to store the ebook meta data. In V2, we've switched to a PHP-based backend using SQLite. The books themselves are stored on the filesystem.
+Kiosk **previously** used Redis to store the ebook meta data. In V2, we've switched to a PHP-based backend using SQLite.  
+The books themselves are stored on the filesystem.
+
 
 ## Usage
 
