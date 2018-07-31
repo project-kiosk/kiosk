@@ -42,14 +42,14 @@
             <section class="meta">
                 <h2 class="title">{{ $book->title }}</h2>
                 <h3 class="author">
-                    <span>von </span>
+                    <span> </span>
                     @if ($book->author)
                         <a href="{{ route('authors.show', [ $book->author->id ]) }}"
                            title="{{ __('authors.books_by', [ 'author' => $book->author->name ]) }}">
-                            {{ $book->author->name }}
+                            {{ __('authors.by', [ 'author' => $book->author->name ]) }}
                         </a>
                     @else
-                        <span>{{ __('authors.unknown') }}</span>
+                        <span>{{ __('authors.by', [ 'author' => __('authors.unknown') ]) }}</span>
                     @endif
                 </h3>
                 <h4 class="more">
