@@ -5,6 +5,7 @@ return [
     'books'          => 'Books',
     'all'            => 'All books',
     'library'        => 'Library',
+    'none_yet'       => 'No books available yet',
     'add'            => 'Add book',
     'add_help'       => 'Just upload a book - everything else is discovered automatically. If your book doesn\'t contain a cover, you can additionally specify one below.',
     'no_description' => 'No description available for this book',

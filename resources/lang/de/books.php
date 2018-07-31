@@ -5,6 +5,7 @@ return [
     'books'          => 'Bücher',
     'all'            => 'Alle Bücher',
     'library'        => 'Bibliothek',
+    'none_yet'       => 'Noch keine Bücher vorhanden',
     'add'            => 'Buch hinzufügen',
     'add_help'       => 'Laden Sie einfach ein Buch hoch - alles weitere geschieht automatisch. Wenn die Datei kein Cover enthält, kann zusätzlich eines angegeben werden.',
     'no_description' => 'Keine Beschreibung für dieses Buch verfügbar',

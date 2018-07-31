@@ -8,7 +8,7 @@
     <div class="actions">
         <button class="create-book" data-link-button data-target="{{ route('books.create') }}">
             <span class="material-icons">add</span>
-            <span>Buch hinzufügen</span>
+            <span>{{ __('books.add') }}</span>
         </button>
     </div>
 @endsection
@@ -24,7 +24,7 @@
                     <img src="{{asset('img/default.jpg')}}">
                 </a>
                 <section class="meta">
-                    <h2 class="title"><a href="{{ route('books.create') }}">Buch hinzufügen</a></h2>
+                    <h2 class="title"><a href="{{ route('books.create') }}">{{ __('books.add') }}</a></h2>
                     <h3 class="author"></h3>
                 </section>
             </article>
@@ -32,7 +32,7 @@
             <article class="spacer"></article>
             <article class="spacer"></article>
         @else
-            <span class="no-content">Noch keine Bücher vorhanden</span>
+            <span class="no-content">{{ __('books.none_yet') }}</span>
         @endif
     </main>
 @endsection
