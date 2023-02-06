@@ -1,0 +1,10 @@
+{
+    "extends": "@project-kiosk/tsconfig/base.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "declarationDir": "./dist"
+    },
+    "include": [
+        "src/*.ts"
+    ]
+}

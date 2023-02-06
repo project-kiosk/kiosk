@@ -1,0 +1,398 @@
+
+> @project-kiosk/kiosk@0.0.0 build
+> vite build
+
+
+vite v4.1.1 building SSR bundle for production...
+transforming...
+10:05:39 AM [vite-plugin-svelte] /src/routes/(library)/authors/[author]/+page.svelte:52:10 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+50:           </p>
+51:         {:else}
+52:           <div class="text-sm text-blue-500 flex items-center justify-start mt-1 cursor-pointer select-none"
+              ^
+53:                on:click={fetchAuthorInfo}>
+54:             <div class="mr-1">
+10:05:39 AM [vite-plugin-svelte] /src/routes/(library)/publishers/[publisher]/+page.svelte:45:14 Security: Anchor with "target=_blank" should have rel attribute containing the value "noreferrer"
+43:             <span>{data.publisher.description}</span>
+44:             {#if data.publisher.wikipediaUrl}
+45:               <a target="_blank" href={data.publisher.wikipediaUrl} class="text-blue-500 underline">Wikipedia</a>
+                  ^
+46:             {/if}
+47:           </p>
+10:05:39 AM [vite-plugin-svelte] /src/routes/(library)/publishers/[publisher]/+page.svelte:49:10 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+47:           </p>
+48:         {:else}
+49:           <div class="text-sm text-blue-500 flex items-center justify-start mt-1 cursor-pointer select-none"
+              ^
+50:                on:click={fetchPublisherInfo}>
+51:             <div class="mr-1">
+10:05:40 AM [vite-plugin-svelte] /src/routes/(library)/books/[book]/CollectionModal.svelte:48:6 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+46:   <ul class="w-96">
+47:     {#each collections as collection}
+48:       <li class="flex items-center justify-between p-2 rounded-md cursor-pointer bg:white hover:bg-gray-100 transition"
+          ^
+49:           on:click={addToCollection(collection)}>
+50:         <Icon name={collection.icon} class="mr-2" />
+10:05:48 AM [vite-plugin-svelte] /src/lib/components/Form/Field.svelte:101:1656 Unused CSS selector ".form-field+.form-field"
+ 99: </label>
+100: 
+101: <style lang="postcss">.form-field{--tw-bg-opacity:1;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity));align-items:center;background-color:rgb(255 255 255/var(--tw-bg-opacity));border-radius:.375rem;border-width:1px;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);display:flex;flex-wrap:wrap;position:relative;transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.form-field:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.form-field:focus{outline:2px solid transparent;outline-offset:2px}@media (prefers-color-scheme:dark){.form-field{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity));border-color:rgb(55 65 81/var(--tw-border-opacity))}}.form-field:has(.form-field__messages){margin-bottom:1.5rem}.form-field+.form-field{margin-top:.5rem}.form-field+:global(.button){margin-top:2rem}.form-field__append-icon,.form-field__prepend-icon{height:1.5rem;line-height:1}.form-field__append-icon,.form-field__label,.form-field__prepend-icon{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.form-field__label{align-items:center;display:flex;flex-shrink:0;font-size:.875rem;justify-content:space-between;line-height:1.25rem;order:1;padding-right:.5rem;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}.form-field__label,.form-field__prepend-icon{padding-left:.5rem}.form-field__prepend-icon{order:2}.form-field__control-wrapper{display:flex;flex-grow:1;order:3}.form-field__control-wrapper+.form-field__label{margin-top:.5rem}.form-field__control-wrapper :global(input),.form-field__control-wrapper :global(textarea){--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);background-color:transparent;border-radius:.375rem;border-style:none;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);flex-grow:1;min-width:0;padding:.25rem .5rem}.form-field__append-icon{order:4}.form-field__append-icon,.form-field__messages{padding-left:.5rem;padding-right:.5rem}.form-field__messages{--tw-text-opacity:1;bottom:0;color:rgb(107 114 128/var(--tw-text-opacity));flex-shrink:0;font-size:.75rem;left:0;line-height:1rem;margin-bottom:-1.5rem;position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}</style>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+102: 
+10:05:48 AM [vite-plugin-svelte] /src/lib/components/Form/Field.svelte:101:2353 Unused CSS selector ".form-field__control-wrapper+.form-field__label"
+ 99: </label>
+100: 
+101: <style lang="postcss">.form-field{--tw-bg-opacity:1;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity));align-items:center;background-color:rgb(255 255 255/var(--tw-bg-opacity));border-radius:.375rem;border-width:1px;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);display:flex;flex-wrap:wrap;position:relative;transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.form-field:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.form-field:focus{outline:2px solid transparent;outline-offset:2px}@media (prefers-color-scheme:dark){.form-field{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity));border-color:rgb(55 65 81/var(--tw-border-opacity))}}.form-field:has(.form-field__messages){margin-bottom:1.5rem}.form-field+.form-field{margin-top:.5rem}.form-field+:global(.button){margin-top:2rem}.form-field__append-icon,.form-field__prepend-icon{height:1.5rem;line-height:1}.form-field__append-icon,.form-field__label,.form-field__prepend-icon{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.form-field__label{align-items:center;display:flex;flex-shrink:0;font-size:.875rem;justify-content:space-between;line-height:1.25rem;order:1;padding-right:.5rem;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}.form-field__label,.form-field__prepend-icon{padding-left:.5rem}.form-field__prepend-icon{order:2}.form-field__control-wrapper{display:flex;flex-grow:1;order:3}.form-field__control-wrapper+.form-field__label{margin-top:.5rem}.form-field__control-wrapper :global(input),.form-field__control-wrapper :global(textarea){--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);background-color:transparent;border-radius:.375rem;border-style:none;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);flex-grow:1;min-width:0;padding:.25rem .5rem}.form-field__append-icon{order:4}.form-field__append-icon,.form-field__messages{padding-left:.5rem;padding-right:.5rem}.form-field__messages{--tw-text-opacity:1;bottom:0;color:rgb(107 114 128/var(--tw-text-opacity));flex-shrink:0;font-size:.75rem;left:0;line-height:1rem;margin-bottom:-1.5rem;position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}</style>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+102: 
+10:05:48 AM [vite-plugin-svelte] /src/lib/components/IconPicker.svelte:483:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+481: 
+482: <div class="relative">
+483:   <div class="contents cursor-pointer" on:click={() => open = true}>
+       ^
+484:     <slot name="activator" {open}></slot>
+485:   </div>
+10:05:49 AM [vite-plugin-svelte] /src/lib/components/Modal.svelte:40:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+38: 
+39: {#if open}
+40:   <div class="z-40 fixed top-0 left-0 w-full h-full bg-black/30 dark:bg-white/5 backdrop-blur-2xl backdrop-saturate-200"
+      ^
+41:        on:click={close}>
+42:   </div>
+10:05:49 AM [vite-plugin-svelte] /src/lib/components/Modal.svelte:47:14 A11y: Avoid using autofocus
+45:     <div class="pointer-events-auto z-50 relative max-w-full h-screen md:py-8">
+46:       <button class="absolute right-0 -top-12 ml-auto w-8 h-8 flex justify-center items-center bg-white/20 dark:bg-black/20 hover:bg-white/40 hover:bg-black/60 transition text-white/80 hover:text-white rounded-full"
+47:               autofocus
+                  ^
+48:               on:click={close}>
+49:         <Icon name="close" weight="500" />
+10:05:50 AM [vite-plugin-svelte] /src/lib/components/Form/AuthorInput.svelte:29:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+27:                    suggestions={fetchSuggestions} />
+28: {#if nameFixable}
+29:   <div class="text-xs text-blue-500 flex items-center justify-end pt-1 cursor-pointer select-none"
+      ^
+30:        on:click={() => input.updateQuery( fixedName )}>
+31:     <Icon name="lightbulb" class="text-sm mr-1" />
+10:05:50 AM [vite-plugin-svelte] /src/lib/components/Form/ImageInput.svelte:58:8 A11y: Screenreaders already announce <img> elements as an image.
+56:         {/if}
+57: 
+58:         <img bind:this={previewImage}
+            ^
+59:              src=""
+60:              alt="Preview of the selected image"
+10:05:50 AM [vite-plugin-svelte] /Users/moritz/Projects/kiosk-v2/temp/node_modules/svelte-file-dropzone/src/components/Dropzone.svelte:329:0 A11y: noninteractive element cannot have nonnegative tabIndex value
+327: <svelte:window on:focus={onWindowFocus} on:dragover={onDocumentDragOver} on:drop={onDocumentDrop} />
+328: 
+329: <div
+     ^
+330:   bind:this={rootRef}
+331:   tabindex="0"
+No name was provided for external module "buffer" in "output.globals" – guessing "buffer".
+No name was provided for external module "strtok3" in "output.globals" – guessing "strtok3".
+No name was provided for external module "token-types" in "output.globals" – guessing "Token".
+No name was provided for external module "fast-xml-parser" in "output.globals" – guessing "fastXmlParser".
+No name was provided for external module "blurhash" in "output.globals" – guessing "blurhash".
+No name was provided for external module "@zip.js/zip.js" in "output.globals" – guessing "zip_js".
+Creating a browser bundle that depends on Node.js built-in modules ("buffer"). You might need to include https://github.com/FredKSchott/rollup-plugin-polyfill-node
+No name was provided for external module "blurhash" in "output.globals" – guessing "blurhash$1".
+"Cover" is imported from external module "@prisma/client" but never used in "src/routes/(library)/books/[book]/BlurBackground.svelte" and "src/lib/prisma.ts".
+✓ 221 modules transformed.
+10:05:51 AM [vite-plugin-svelte] ssr compile done.
+package             	files	  time	   avg
+@project-kiosk/kiosk	   63	 1.08s	17.1ms
+bytemd              	    6	 0.57s	94.5ms
+svelte-waypoint     	    1	45.6ms	45.6ms
+svelte-gravatar     	    2	33.7ms	16.9ms
+svelte-transition   	    1	32.0ms	32.0ms
+svelte-file-dropzone	    1	28.5ms	28.5ms
+@sveltejs/kit       	    1	 2.0ms	 2.0ms
+rendering chunks...
+(node:43221) [DEP0164] DeprecationWarning: Implicit coercion to integer for exit code is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+vite v4.1.1 building for production...
+transforming...
+10:06:06 AM [vite-plugin-svelte] /src/routes/(library)/publishers/[publisher]/+page.svelte:45:14 Security: Anchor with "target=_blank" should have rel attribute containing the value "noreferrer"
+43:             <span>{data.publisher.description}</span>
+44:             {#if data.publisher.wikipediaUrl}
+45:               <a target="_blank" href={data.publisher.wikipediaUrl} class="text-blue-500 underline">Wikipedia</a>
+                  ^
+46:             {/if}
+47:           </p>
+10:06:06 AM [vite-plugin-svelte] /src/routes/(library)/publishers/[publisher]/+page.svelte:49:10 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+47:           </p>
+48:         {:else}
+49:           <div class="text-sm text-blue-500 flex items-center justify-start mt-1 cursor-pointer select-none"
+              ^
+50:                on:click={fetchPublisherInfo}>
+51:             <div class="mr-1">
+10:06:07 AM [vite-plugin-svelte] /src/routes/(library)/authors/[author]/+page.svelte:52:10 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+50:           </p>
+51:         {:else}
+52:           <div class="text-sm text-blue-500 flex items-center justify-start mt-1 cursor-pointer select-none"
+              ^
+53:                on:click={fetchAuthorInfo}>
+54:             <div class="mr-1">
+10:06:09 AM [vite-plugin-svelte] /src/routes/(library)/books/[book]/CollectionModal.svelte:48:6 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+46:   <ul class="w-96">
+47:     {#each collections as collection}
+48:       <li class="flex items-center justify-between p-2 rounded-md cursor-pointer bg:white hover:bg-gray-100 transition"
+          ^
+49:           on:click={addToCollection(collection)}>
+50:         <Icon name={collection.icon} class="mr-2" />
+10:06:09 AM [vite-plugin-svelte] /Users/moritz/Projects/kiosk-v2/temp/node_modules/svelte-gravatar/component/Gravatar.svelte:49:0 <WrapperComponent/> will not be reactive if WrapperComponent changes. Use <svelte:component this={WrapperComponent}/> if you want this reactivity.
+47: </script>
+48: 
+49: <WrapperComponent {...waypointOptions}>
+    ^
+50:   <img
+51:     alt="{typeof alt === undefined ? `Gravatar for ${formattedEmail}` : alt}"
+10:06:09 AM [vite-plugin-svelte] /src/lib/components/Modal.svelte:40:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+38: 
+39: {#if open}
+40:   <div class="z-40 fixed top-0 left-0 w-full h-full bg-black/30 dark:bg-white/5 backdrop-blur-2xl backdrop-saturate-200"
+      ^
+41:        on:click={close}>
+42:   </div>
+10:06:09 AM [vite-plugin-svelte] /src/lib/components/Modal.svelte:47:14 A11y: Avoid using autofocus
+45:     <div class="pointer-events-auto z-50 relative max-w-full h-screen md:py-8">
+46:       <button class="absolute right-0 -top-12 ml-auto w-8 h-8 flex justify-center items-center bg-white/20 dark:bg-black/20 hover:bg-white/40 hover:bg-black/60 transition text-white/80 hover:text-white rounded-full"
+47:               autofocus
+                  ^
+48:               on:click={close}>
+49:         <Icon name="close" weight="500" />
+".prisma/client/index-browser" is imported by " .prisma/client/index-browser?commonjs-external", but could not be resolved – treating it as an external dependency.
+10:06:12 AM [vite-plugin-svelte] /src/lib/components/Form/AuthorInput.svelte:29:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+27:                    suggestions={fetchSuggestions} />
+28: {#if nameFixable}
+29:   <div class="text-xs text-blue-500 flex items-center justify-end pt-1 cursor-pointer select-none"
+      ^
+30:        on:click={() => input.updateQuery( fixedName )}>
+31:     <Icon name="lightbulb" class="text-sm mr-1" />
+10:06:12 AM [vite-plugin-svelte] /src/lib/components/Form/ImageInput.svelte:58:8 A11y: Screenreaders already announce <img> elements as an image.
+56:         {/if}
+57: 
+58:         <img bind:this={previewImage}
+            ^
+59:              src=""
+60:              alt="Preview of the selected image"
+10:06:13 AM [vite-plugin-svelte] /src/lib/components/Form/Field.svelte:101:1656 Unused CSS selector ".form-field+.form-field"
+ 99: </label>
+100: 
+101: <style lang="postcss">.form-field{--tw-bg-opacity:1;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity));align-items:center;background-color:rgb(255 255 255/var(--tw-bg-opacity));border-radius:.375rem;border-width:1px;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);display:flex;flex-wrap:wrap;position:relative;transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.form-field:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.form-field:focus{outline:2px solid transparent;outline-offset:2px}@media (prefers-color-scheme:dark){.form-field{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity));border-color:rgb(55 65 81/var(--tw-border-opacity))}}.form-field:has(.form-field__messages){margin-bottom:1.5rem}.form-field+.form-field{margin-top:.5rem}.form-field+:global(.button){margin-top:2rem}.form-field__append-icon,.form-field__prepend-icon{height:1.5rem;line-height:1}.form-field__append-icon,.form-field__label,.form-field__prepend-icon{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.form-field__label{align-items:center;display:flex;flex-shrink:0;font-size:.875rem;justify-content:space-between;line-height:1.25rem;order:1;padding-right:.5rem;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}.form-field__label,.form-field__prepend-icon{padding-left:.5rem}.form-field__prepend-icon{order:2}.form-field__control-wrapper{display:flex;flex-grow:1;order:3}.form-field__control-wrapper+.form-field__label{margin-top:.5rem}.form-field__control-wrapper :global(input),.form-field__control-wrapper :global(textarea){--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);background-color:transparent;border-radius:.375rem;border-style:none;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);flex-grow:1;min-width:0;padding:.25rem .5rem}.form-field__append-icon{order:4}.form-field__append-icon,.form-field__messages{padding-left:.5rem;padding-right:.5rem}.form-field__messages{--tw-text-opacity:1;bottom:0;color:rgb(107 114 128/var(--tw-text-opacity));flex-shrink:0;font-size:.75rem;left:0;line-height:1rem;margin-bottom:-1.5rem;position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}</style>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+102: 
+10:06:13 AM [vite-plugin-svelte] /src/lib/components/Form/Field.svelte:101:2353 Unused CSS selector ".form-field__control-wrapper+.form-field__label"
+ 99: </label>
+100: 
+101: <style lang="postcss">.form-field{--tw-bg-opacity:1;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity));align-items:center;background-color:rgb(255 255 255/var(--tw-bg-opacity));border-radius:.375rem;border-width:1px;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);display:flex;flex-wrap:wrap;position:relative;transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.form-field:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.form-field:focus{outline:2px solid transparent;outline-offset:2px}@media (prefers-color-scheme:dark){.form-field{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity));border-color:rgb(55 65 81/var(--tw-border-opacity))}}.form-field:has(.form-field__messages){margin-bottom:1.5rem}.form-field+.form-field{margin-top:.5rem}.form-field+:global(.button){margin-top:2rem}.form-field__append-icon,.form-field__prepend-icon{height:1.5rem;line-height:1}.form-field__append-icon,.form-field__label,.form-field__prepend-icon{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.form-field__label{align-items:center;display:flex;flex-shrink:0;font-size:.875rem;justify-content:space-between;line-height:1.25rem;order:1;padding-right:.5rem;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}.form-field__label,.form-field__prepend-icon{padding-left:.5rem}.form-field__prepend-icon{order:2}.form-field__control-wrapper{display:flex;flex-grow:1;order:3}.form-field__control-wrapper+.form-field__label{margin-top:.5rem}.form-field__control-wrapper :global(input),.form-field__control-wrapper :global(textarea){--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);background-color:transparent;border-radius:.375rem;border-style:none;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);flex-grow:1;min-width:0;padding:.25rem .5rem}.form-field__append-icon{order:4}.form-field__append-icon,.form-field__messages{padding-left:.5rem;padding-right:.5rem}.form-field__messages{--tw-text-opacity:1;bottom:0;color:rgb(107 114 128/var(--tw-text-opacity));flex-shrink:0;font-size:.75rem;left:0;line-height:1rem;margin-bottom:-1.5rem;position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%}</style>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+102: 
+10:06:13 AM [vite-plugin-svelte] /src/lib/components/IconPicker.svelte:483:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event.
+481: 
+482: <div class="relative">
+483:   <div class="contents cursor-pointer" on:click={() => open = true}>
+       ^
+484:     <slot name="activator" {open}></slot>
+485:   </div>
+10:06:16 AM [vite-plugin-svelte] /Users/moritz/Projects/kiosk-v2/temp/node_modules/svelte-file-dropzone/src/components/Dropzone.svelte:329:0 A11y: noninteractive element cannot have nonnegative tabIndex value
+327: <svelte:window on:focus={onWindowFocus} on:dragover={onDocumentDragOver} on:drop={onDocumentDrop} />
+328: 
+329: <div
+     ^
+330:   bind:this={rootRef}
+331:   tabindex="0"
+✓ 1168 modules transformed.
+10:06:22 AM [vite-plugin-svelte] dom compile done.
+package             	files	  time	   avg
+@project-kiosk/kiosk	   63	 4.54s	72.1ms
+bytemd              	    6	 0.41s	68.0ms
+@sveltejs/kit       	    1	49.9ms	49.9ms
+svelte-gravatar     	    2	46.7ms	23.4ms
+svelte-file-dropzone	    1	45.2ms	45.2ms
+svelte-transition   	    1	36.9ms	36.9ms
+svelte-waypoint     	    1	18.6ms	18.6ms
+Generated an empty chunk: "15".
+rendering chunks...
+The emitted file "vite-manifest.json" overwrites a previously emitted file of the same name.
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                                                                                0.03 kB
+.svelte-kit/output/client/_app/immutable/assets/chromium-8e77d142.svg                                                      0.52 kB
+.svelte-kit/output/client/_app/immutable/assets/chrome-98045c79.svg                                                        1.07 kB
+.svelte-kit/output/client/_app/immutable/assets/webkit-53e0cd5c.svg                                                        1.62 kB
+.svelte-kit/output/client/_app/immutable/assets/safari-ios-ad2668fd.svg                                                    1.63 kB
+.svelte-kit/output/client/_app/immutable/assets/brave-efda3898.svg                                                         1.81 kB
+.svelte-kit/output/client/_app/immutable/assets/edge-e54a3dc2.svg                                                          2.94 kB
+.svelte-kit/output/client/_app/immutable/workers/image.worker-62a107d8.js                                                  3.17 kB
+.svelte-kit/output/client/_app/immutable/assets/firefox-9be61e66.svg                                                       7.51 kB
+.svelte-kit/output/client/vite-manifest.json                                                                              23.80 kB
+.svelte-kit/output/client/_app/immutable/assets/silk-eb3f5b6b.png                                                         24.15 kB
+.svelte-kit/output/client/_app/immutable/assets/yandex-9499a6fc.png                                                       65.85 kB
+.svelte-kit/output/client/_app/immutable/workers/epub.worker-e0f04703.js                                                 225.73 kB
+.svelte-kit/output/client/_app/immutable/assets/safari-21f3b1f9.png                                                    1,093.97 kB
+.svelte-kit/output/client/_app/immutable/assets/Gravatar-4668feb7.css                                                      0.05 kB │ gzip:   0.07 kB
+.svelte-kit/output/client/_app/immutable/assets/Icon-b23474b4.css                                                          0.15 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/assets/BookCover-93753652.css                                                     0.38 kB │ gzip:   0.25 kB
+.svelte-kit/output/client/_app/immutable/assets/_page-749da241.css                                                         1.38 kB │ gzip:   0.42 kB
+.svelte-kit/output/client/_app/immutable/assets/_layout-9ba595ac.css                                                       1.46 kB │ gzip:   0.47 kB
+.svelte-kit/output/client/_app/immutable/assets/_page@(library)-3ce020ed.css                                               1.60 kB │ gzip:   0.35 kB
+.svelte-kit/output/client/_app/immutable/assets/Button-5b7a992e.css                                                        3.22 kB │ gzip:   0.70 kB
+.svelte-kit/output/client/_app/immutable/assets/Field-b6de95ad.css                                                         3.48 kB │ gzip:   0.87 kB
+.svelte-kit/output/client/_app/immutable/assets/index-05a3482a.css                                                        14.11 kB │ gzip:   3.48 kB
+.svelte-kit/output/client/_app/immutable/assets/_layout-b34dbe48.css                                                      37.20 kB │ gzip:   7.53 kB
+.svelte-kit/output/client/_app/immutable/chunks/15-4ed993c7.js                                                             0.00 kB │ gzip:   0.02 kB
+.svelte-kit/output/client/_app/immutable/modules/pages/auth/attestation/_page.ts-8c14db4c.js                               0.07 kB │ gzip:   0.08 kB
+.svelte-kit/output/client/_app/immutable/chunks/9-0925c550.js                                                              0.09 kB │ gzip:   0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/1-e4e7da25.js                                                              0.10 kB │ gzip:   0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/0-e2749f82.js                                                              0.10 kB │ gzip:   0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/8-63035951.js                                                              0.10 kB │ gzip:   0.11 kB
+.svelte-kit/output/client/_app/immutable/chunks/10-d07ec38d.js                                                             0.11 kB │ gzip:   0.11 kB
+.svelte-kit/output/client/_app/immutable/chunks/22-15c80088.js                                                             0.11 kB │ gzip:   0.11 kB
+.svelte-kit/output/client/_app/immutable/chunks/2-5c6e7bbf.js                                                              0.11 kB │ gzip:   0.11 kB
+.svelte-kit/output/client/_app/immutable/chunks/13-94c40494.js                                                             0.11 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/4-842aea43.js                                                              0.11 kB │ gzip:   0.12 kB
+
+(!) Some chunks are larger than 500 kBs after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+.svelte-kit/output/client/_app/immutable/chunks/11-ad08f3f8.js                                                             0.11 kB │ gzip:   0.11 kB
+.svelte-kit/output/client/_app/immutable/chunks/6-ae4bd334.js                                                              0.11 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/3-e8efb7c2.js                                                              0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/19-3912532d.js                                                             0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/16-002b270a.js                                                             0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/7-208ab4a3.js                                                              0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/5-542f9a0f.js                                                              0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/18-d29836e3.js                                                             0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/12-85ab13eb.js                                                             0.12 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/epub.worker-d95a459f.js                                                    0.12 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/chunks/image.worker-46bfd658.js                                                   0.13 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/chunks/14-6b38fb63.js                                                             0.13 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/20-b78ec870.js                                                             0.13 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/chunks/17-1b03a7b7.js                                                             0.13 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/collections/_page.svelte-ae0b2168.js                   0.16 kB │ gzip:   0.15 kB
+.svelte-kit/output/client/_app/immutable/chunks/21-3777575a.js                                                             0.17 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/chunks/navigation-65831a83.js                                                     0.21 kB │ gzip:   0.17 kB
+.svelte-kit/output/client/_app/immutable/chunks/stores-015194d8.js                                                         0.27 kB │ gzip:   0.18 kB
+.svelte-kit/output/client/_app/immutable/chunks/_page-d415ee90.js                                                          0.36 kB │ gzip:   0.27 kB
+.svelte-kit/output/client/_app/immutable/components/layout.svelte-de7977d8.js                                              0.54 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/_page.svelte-7c677d24.js                               0.67 kB │ gzip:   0.43 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/authors/_layout.svelte-cc31fb5e.js                     0.74 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/collections/_layout.svelte-cc31fb5e.js                 0.74 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/books/_layout.svelte-cc31fb5e.js                       0.74 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/family/_layout.svelte-cc31fb5e.js                      0.74 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/publishers/_layout.svelte-cc31fb5e.js                  0.74 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/chunks/preload-helper-41c905a7.js                                                 0.76 kB │ gzip:   0.48 kB
+.svelte-kit/output/client/_app/immutable/components/pages/auth/_layout.svelte-f1c7254e.js                                  0.79 kB │ gzip:   0.53 kB
+.svelte-kit/output/client/_app/immutable/chunks/BookCover-d44a9f78.js                                                      1.13 kB │ gzip:   0.65 kB
+.svelte-kit/output/client/_app/immutable/chunks/parse-b67c4dc9.js                                                          1.21 kB │ gzip:   0.59 kB
+.svelte-kit/output/client/_app/immutable/components/pages/_error.svelte-53fa9552.js                                        1.31 kB │ gzip:   0.73 kB
+.svelte-kit/output/client/_app/immutable/components/pages/_layout.svelte-54410b65.js                                       1.31 kB │ gzip:   0.75 kB
+.svelte-kit/output/client/_app/immutable/chunks/Author-6d741a9e.js                                                         1.37 kB │ gzip:   0.75 kB
+.svelte-kit/output/client/_app/immutable/chunks/forms-165715fe.js                                                          1.50 kB │ gzip:   0.79 kB
+.svelte-kit/output/client/_app/immutable/chunks/Icon-a825eee0.js                                                           1.57 kB │ gzip:   0.90 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/authors/_page.svelte-b19d42ee.js                       1.83 kB │ gzip:   0.97 kB
+.svelte-kit/output/client/_app/immutable/chunks/Book-91bac98e.js                                                           2.23 kB │ gzip:   1.13 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/books/_page.svelte-3090fb46.js                         2.59 kB │ gzip:   1.34 kB
+.svelte-kit/output/client/_app/immutable/chunks/Button-788bbe2f.js                                                         2.81 kB │ gzip:   1.38 kB
+.svelte-kit/output/client/_app/immutable/chunks/singletons-4d7ee2d9.js                                                     2.92 kB │ gzip:   1.53 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/publishers/_page.svelte-ee1345de.js                    3.01 kB │ gzip:   1.37 kB
+.svelte-kit/output/client/_app/immutable/components/pages/auth/attestation/_page.svelte-d8aca681.js                        3.32 kB │ gzip:   1.57 kB
+.svelte-kit/output/client/_app/immutable/chunks/utilities-05b783db.js                                                      5.20 kB │ gzip:   2.58 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/authors/_author_/_page.svelte-3325cf0b.js              6.53 kB │ gzip:   2.76 kB
+.svelte-kit/output/client/_app/immutable/chunks/index-cb505a7c.js                                                          7.35 kB │ gzip:   2.65 kB
+.svelte-kit/output/client/_app/immutable/chunks/index-c5f8c161.js                                                          7.64 kB │ gzip:   3.00 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/publishers/_publisher_/_page.svelte-8f44b4d7.js        8.09 kB │ gzip:   3.07 kB
+.svelte-kit/output/client/_app/immutable/chunks/client-502087ee.js                                                         9.26 kB │ gzip:   3.83 kB
+.svelte-kit/output/client/_app/immutable/chunks/index-3b55acb9.js                                                          9.36 kB │ gzip:   3.72 kB
+.svelte-kit/output/client/_app/immutable/chunks/Field-52e5870f.js                                                         10.54 kB │ gzip:   3.72 kB
+.svelte-kit/output/client/_app/immutable/chunks/Gravatar-41b0e30b.js                                                      11.59 kB │ gzip:   4.95 kB
+.svelte-kit/output/client/_app/immutable/components/pages/auth/login/_page.svelte-cb681cbd.js                             15.98 kB │ gzip:   5.73 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/collections/_collection_/_page.svelte-295dd965.js     20.66 kB │ gzip:   8.31 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/family/profile/_page.svelte-8c394287.js               22.50 kB │ gzip:   8.57 kB
+.svelte-kit/output/client/_app/immutable/start-7d8cb63f.js                                                                35.74 kB │ gzip:  11.30 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/books/_book_/_page@(library).svelte-4a03ac6b.js       37.13 kB │ gzip:  12.03 kB
+.svelte-kit/output/client/_app/immutable/components/pages/(library)/_layout.svelte-b8f273c4.js                            79.87 kB │ gzip:  26.50 kB
+.svelte-kit/output/client/_app/immutable/chunks/index-e918d0cf.js                                                        609.85 kB │ gzip: 188.77 kB
+.svelte-kit/output/server/vite-manifest.json                                                         17.36 kB
+.svelte-kit/output/server/entries/pages/auth/attestation/_page.ts.js                                  0.11 kB
+.svelte-kit/output/server/chunks/prisma.js                                                            0.11 kB
+.svelte-kit/output/server/chunks/image.worker.js                                                      0.14 kB
+.svelte-kit/output/server/entries/endpoints/auth/logout/_server.ts.js                                 0.18 kB
+.svelte-kit/output/server/chunks/private.js                                                           0.18 kB
+.svelte-kit/output/server/entries/pages/(library)/collections/_page.svelte.js                         0.20 kB
+.svelte-kit/output/server/entries/pages/auth/_layout.server.ts.js                                     0.20 kB
+.svelte-kit/output/server/entries/fallbacks/layout.svelte.js                                          0.24 kB
+.svelte-kit/output/server/entries/pages/(library)/books/_page.server.ts.js                            0.25 kB
+.svelte-kit/output/server/entries/pages/(library)/authors/_page.server.ts.js                          0.26 kB
+.svelte-kit/output/server/entries/pages/auth/login/_layout.server.ts.js                               0.26 kB
+.svelte-kit/output/server/entries/pages/(library)/publishers/_page.server.ts.js                       0.26 kB
+.svelte-kit/output/server/entries/pages/(library)/family/_layout.server.ts.js                         0.27 kB
+.svelte-kit/output/server/entries/pages/(library)/authors/_layout.svelte.js                           0.29 kB
+.svelte-kit/output/server/entries/pages/(library)/books/_layout.svelte.js                             0.29 kB
+.svelte-kit/output/server/entries/pages/(library)/collections/_layout.svelte.js                       0.29 kB
+.svelte-kit/output/server/entries/pages/(library)/family/_layout.svelte.js                            0.29 kB
+.svelte-kit/output/server/entries/pages/(library)/publishers/_layout.svelte.js                        0.29 kB
+.svelte-kit/output/server/entries/pages/(library)/_page.svelte.js                                     0.34 kB
+.svelte-kit/output/server/entries/pages/auth/_layout.svelte.js                                        0.34 kB
+(node:43280) [DEP0164] DeprecationWarning: Implicit coercion to integer for exit code is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+.svelte-kit/output/server/entries/pages/_layout.server.ts.js                                          0.35 kB
+.svelte-kit/output/server/entries/pages/(library)/family/profile/_page.server.ts.js                   0.40 kB
+.svelte-kit/output/server/entries/pages/(library)/_layout.server.ts.js                                0.44 kB
+.svelte-kit/output/server/entries/pages/(library)/authors/_author_/_page.server.ts.js                 0.44 kB
+.svelte-kit/output/server/entries/pages/(library)/collections/_collection_/_page.server.ts.js         0.46 kB
+.svelte-kit/output/server/chunks/stores.js                                                            0.47 kB
+.svelte-kit/output/server/entries/endpoints/(library)/publishers/_publisher_/picture/_server.ts.js    0.47 kB
+.svelte-kit/output/server/entries/endpoints/(library)/authors/_author_/picture/_server.ts.js          0.51 kB
+.svelte-kit/output/server/chunks/shared.js                                                            0.60 kB
+.svelte-kit/output/server/entries/pages/(library)/books/_book_/_page.server.ts.js                     0.61 kB
+.svelte-kit/output/server/entries/pages/_error.svelte.js                                              0.68 kB
+.svelte-kit/output/server/entries/pages/(library)/authors/_page.svelte.js                             0.71 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js                                             0.72 kB
+.svelte-kit/output/server/entries/pages/(library)/publishers/_publisher_/_page.server.ts.js           0.73 kB
+.svelte-kit/output/server/chunks/PageHeader.js                                                        0.75 kB
+.svelte-kit/output/server/chunks/Author.js                                                            0.77 kB
+.svelte-kit/output/server/chunks/utilities.js                                                         0.85 kB
+.svelte-kit/output/server/entries/pages/auth/attestation/_page.svelte.js                              0.96 kB
+.svelte-kit/output/server/chunks/utilities4.js                                                        1.04 kB
+.svelte-kit/output/server/entries/endpoints/(library)/books/_book_/cover/_server.ts.js                1.06 kB
+.svelte-kit/output/server/entries/endpoints/(library)/books/_book_/download/__asset__/_server.ts.js   1.27 kB
+.svelte-kit/output/server/chunks/Book.js                                                              1.31 kB
+.svelte-kit/output/server/entries/pages/(library)/publishers/_page.svelte.js                          1.37 kB
+.svelte-kit/output/server/entries/pages/(library)/books/_page.svelte.js                               1.37 kB
+.svelte-kit/output/server/entries/endpoints/auth/assertion/generate/_server.ts.js                     1.40 kB
+.svelte-kit/output/server/chunks/hooks.server.js                                                      1.50 kB
+.svelte-kit/output/server/chunks/BookCover.js                                                         1.71 kB
+.svelte-kit/output/server/chunks/Icon.js                                                              1.95 kB
+.svelte-kit/output/server/chunks/utilities3.js                                                        1.96 kB
+.svelte-kit/output/server/entries/pages/(library)/authors/_author_/_page.svelte.js                    2.10 kB
+.svelte-kit/output/server/chunks/index.js                                                             2.24 kB
+.svelte-kit/output/server/entries/endpoints/auth/attestation/generate/_server.ts.js                   2.30 kB
+.svelte-kit/output/server/entries/pages/(library)/publishers/_publisher_/_page.svelte.js              2.54 kB
+.svelte-kit/output/server/entries/endpoints/auth/assertion/verify/_server.ts.js                       2.85 kB
+.svelte-kit/output/server/entries/endpoints/auth/attestation/verify/_server.ts.js                     2.87 kB
+.svelte-kit/output/server/entries/pages/auth/login/_page.server.ts.js                                 2.90 kB
+.svelte-kit/output/server/chunks/storage.js                                                           3.70 kB
+.svelte-kit/output/server/internal.js                                                                 4.31 kB
+.svelte-kit/output/server/chunks/utilities2.js                                                        4.71 kB
+.svelte-kit/output/server/chunks/index3.js                                                            5.08 kB
+.svelte-kit/output/server/chunks/Gravatar.js                                                          5.37 kB
+.svelte-kit/output/server/chunks/Button.js                                                            5.55 kB
+.svelte-kit/output/server/chunks/index2.js                                                            6.72 kB
+.svelte-kit/output/server/entries/pages/(library)/family/profile/_page.svelte.js                      8.15 kB
+.svelte-kit/output/server/chunks/language.js                                                          9.87 kB
+.svelte-kit/output/server/chunks/Field.js                                                            10.04 kB
+.svelte-kit/output/server/entries/pages/auth/login/_page.svelte.js                                   10.51 kB
+.svelte-kit/output/server/entries/pages/(library)/collections/_collection_/_page.svelte.js           18.02 kB
+.svelte-kit/output/server/entries/pages/(library)/books/_book_/_page@(library).svelte.js             18.83 kB
+.svelte-kit/output/server/chunks/router.js                                                           20.57 kB
+.svelte-kit/output/server/entries/pages/(library)/books/add/_page.server.ts.js                       39.57 kB
+.svelte-kit/output/server/entries/pages/(library)/_layout.svelte.js                                  75.44 kB
+.svelte-kit/output/server/index.js                                                                   77.29 kB
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-auto
+  Could not detect a supported production environment. See https://kit.svelte.dev/docs/adapters to learn how to configure your app to run on the platform of your choosing
+  ✔ done

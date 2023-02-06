@@ -1,0 +1,24 @@
+{
+    "name": "@project-kiosk/mail-noop",
+    "version": "0.0.0",
+    "description": "A no-op mail adapter",
+    "type": "module",
+    "exports": {
+        ".": {
+            "default": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "devDependencies": {
+        "@sveltejs/kit": "^1.3.3",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "@project-kiosk/types": "^0.0.0"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts"
+}

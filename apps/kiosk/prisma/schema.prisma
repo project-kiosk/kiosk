@@ -1,0 +1,175 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./kiosk.sqlite"
+}
+
+model User {
+  id           String  @id @default(cuid())
+  name         String
+  email        String  @unique
+  passwordHash String
+  verified     Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  updatedAuthors    Author[]
+  updatedBooks      Book[]
+  updatedPublishers Publisher[]
+  authenticators    Authenticator[]
+  passCodes         PassCode[]
+  collections       Collection[]
+}
+
+model PassCode {
+  id   String @id @default(cuid())
+  code String
+
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+
+  userId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, code])
+}
+
+model AuthenticatorChallenge {
+  id                String @id @default(cuid())
+  challenge         String
+  sessionIdentifier String
+
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+}
+
+model Authenticator {
+  id         String  @id @default(cuid())
+  handle     String?
+  agent      String?
+  type       String?
+  publicKey  String
+  identifier String
+  deviceType String // singleDevice or multiDevice
+  transports String // usb,ble,nfc,internal - comma separated string
+  counter    BigInt  @default(0)
+  backedUp   Boolean
+
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  lastUsedAt DateTime?
+
+  userId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([type])
+}
+
+model Author {
+  id           String  @id @default(cuid())
+  name         String
+  description  String?
+  wikipediaUrl String?
+  pictureUrl   String?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  updatedByUserId String?
+
+  books     Book[]
+  updatedBy User?  @relation(fields: [updatedByUserId], references: [id])
+
+  @@unique([name])
+}
+
+model Book {
+  id          String  @id @default(cuid())
+  title       String
+  uuid        String?
+  isbn        String?
+  doi         String?
+  jdcn        String?
+  description String?
+  language    String?
+  rights      String?
+  rating      Int?
+  metadata    String  @default("{}") // Json @default("{}")
+
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  authorId        String?
+  coverId         String? @unique
+  publisherId     String?
+  updatedByUserId String?
+
+  assets      Asset[]
+  author      Author?      @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  cover       Cover?       @relation(fields: [coverId], references: [id], onDelete: Cascade)
+  publisher   Publisher?   @relation(fields: [publisherId], references: [id], onDelete: SetNull)
+  updatedBy   User?        @relation(fields: [updatedByUserId], references: [id])
+  collections Collection[]
+}
+
+model Collection {
+  id      String  @id @default(cuid())
+  name    String
+  ownerId String
+  icon    String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  books Book[]
+  owner User   @relation(fields: [ownerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
+
+model Cover {
+  id        String @id @default(cuid())
+  size      Int
+  mediaType String
+  width     Int
+  height    Int
+  hash      String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  book Book?
+}
+
+model Asset {
+  id        String @id @default(cuid())
+  size      Int
+  mediaType String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  bookId String
+
+  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+}
+
+model Publisher {
+  id           String  @id @default(cuid())
+  name         String
+  logoUrl      String?
+  wikipediaUrl String?
+  description  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  updatedByUserId String?
+
+  books     Book[]
+  updatedBy User?  @relation(fields: [updatedByUserId], references: [id])
+}

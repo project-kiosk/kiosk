@@ -1,0 +1,18 @@
+{
+    "name": "@project-kiosk/search-algolia",
+    "version": "0.0.0",
+    "description": "A search adapter for Algolia",
+    "type": "module",
+    "devDependencies": {
+        "@sveltejs/kit": "^1.3.3",
+        "typescript": "^4.9.4",
+        "algoliasearch": "^4.14.3"
+    },
+    "dependencies": {
+        "@project-kiosk/types": "^0.0.0",
+        "@project-kiosk/utils": "^0.0.0"
+    },
+    "scripts": {
+        "build": "tsc"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "@project-kiosk/mail-mailgun",
+    "version": "0.0.0",
+    "description": "A mail adapter for Mailgun",
+    "type": "module",
+    "devDependencies": {
+        "@sveltejs/kit": "^1.3.3",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "@project-kiosk/types": "^0.0.0",
+        "@project-kiosk/mail-nodemailer": "^0.0.0",
+        "nodemailer": "^6.8.0",
+        "nodemailer-mailgun-transport": "^2.1.5"
+    },
+    "scripts": {
+        "build": "tsc"
+    }
+}

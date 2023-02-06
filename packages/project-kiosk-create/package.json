@@ -1,0 +1,30 @@
+{
+    "name": "@project-kiosk/create",
+    "version": "0.0.0",
+    "description": "An initializer to scaffold new Kiosk installations.",
+    "type": "module",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.umd.js",
+            "default": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "@types/minimist": "^1.2.2",
+        "@types/prompts": "^2.4.2",
+        "minimist": "^1.2.7",
+        "prompts": "^2.4.2",
+        "kolorist": "^1.6.0",
+        "rollup": "^3.12.1",
+        "rollup-plugin-esbuild": "^5.0.0",
+        "lmify": "^0.3.0"
+    },
+    "scripts": {
+        "build": "rollup --config"
+    }
+}

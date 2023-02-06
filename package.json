@@ -1,26 +1,25 @@
 {
+    "name": "@project-kiosk/root",
+    "version": "1.0.0",
     "private": true,
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
     "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint"
     },
     "devDependencies": {
-        "axios": "^0.18",
-        "bootstrap": "^4.0.0",
-        "popper.js": "^1.12",
-        "cross-env": "^5.1",
-        "jquery": "^3.2",
-        "laravel-mix": "^2.0",
-        "lodash": "^4.17.4",
-        "vue": "^2.5.7"
+        "turbo": "latest",
+        "prettier": "^2.4.1",
+        "prettier-plugin-svelte": "^2.4.0"
     },
-    "dependencies": {
-        "flatpickr": "^4.5.1",
-        "medium-editor": "^5.23.3"
-    }
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/project-kiosk/kiosk.git"
+    },
+    "license": "MIT",
+    "type": "module"
 }

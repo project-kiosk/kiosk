@@ -1,0 +1,31 @@
+
+> @project-kiosk/create@0.0.0 build
+> rollup --config
+
+(node:43152) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[36m
+[1msrc/index.ts[22m → [1mdist/, dist/[22m...[39m
+[1m[33m(!) Missing shims for Node.js built-ins[39m[22m
+Creating a browser bundle that depends on "node:fs/promises", "node:process", "node:fs", "node:path" and "node:child_process". You might need to include https://github.com/FredKSchott/rollup-plugin-polyfill-node
+[1m[33m(!) Unresolved dependencies[39m[22m
+[90mhttps://rollupjs.org/troubleshooting/#warning-treating-module-as-external-dependency[39m
+[1mkolorist[22m (imported by "src/index.ts" and "src/dependencies.ts")
+[1mminimist[22m (imported by "src/index.ts")
+[1mnode:fs/promises[22m (imported by "src/index.ts")
+[1mnode:process[22m (imported by "src/index.ts" and "src/utils.ts")
+[1mprompts[22m (imported by "src/index.ts")
+[1mnode:fs[22m (imported by "src/utils.ts" and "src/packageJson.ts")
+[1mnode:path[22m (imported by "src/utils.ts")
+[1mnode:child_process[22m (imported by "src/dependencies.ts")
+[1m[33m(!) Missing global variable names[39m[22m
+[90mhttps://rollupjs.org/configuration-options/#output-globals[39m
+Use "output.globals" to specify browser global variable names corresponding to external modules:
+[1mkolorist[22m (guessing "kolorist")
+[1mminimist[22m (guessing "m")
+[1mnode:fs/promises[22m (guessing "promises")
+[1mnode:process[22m (guessing "a")
+[1mprompts[22m (guessing "v$1")
+[1mnode:fs[22m (guessing "node_fs")
+[1mnode:child_process[22m (guessing "node_child_process")
+[32mcreated [1mdist/, dist/[22m in [1m310ms[22m[39m
